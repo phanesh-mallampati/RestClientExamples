@@ -27,7 +27,7 @@ public class ApiServiceImplTest {
     @Test
     public void getUsersBeforeImpl() {
         List<User> data = apiService.getUsers(3);
-        assertEquals(null, data);
+        assertNotEquals(null, data);
     }
 
     @Test
